@@ -8,7 +8,7 @@
  * above copyright notice and this permission notice appear in all copies.
  *
  * @package  FlameCore\Container
- * @version  1.0-dev
+ * @version  1.0
  * @link     https://www.flamecroe.org
  * @license  https://opensource.org/licenses/MIT MIT License
  */
