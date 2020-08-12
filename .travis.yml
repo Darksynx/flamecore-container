@@ -1,0 +1,16 @@
+language: php
+php:
+  - 7.2
+  - 7.3
+  - 7.4
+
+jobs:
+  fast_finish: true
+
+install:
+  - composer install --prefer-source
+
+script: vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
+
+after_script:
+  - vendor/bin/ocular code-coverage:upload --format=php-clover coverage.clover
